@@ -1,0 +1,56 @@
+# ── Python ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+*.whl
+
+# ── Virtual Environment ───────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── IDE / Editor ──────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ── Large Model Weights (download separately) ────────────────────────
+# YOLO weights
+yolo11m.pt
+yolov8m.pt
+*.pt
+*.engine
+*.onnx
+
+# ── Dataset (too large for git — download separately) ────────────────
+archive/
+
+# ── Generated Gallery (built from enrollment photos) ────────────────
+models/face_gallery/embeddings.npy
+models/face_gallery/identities.json
+
+# ── Trained Action Model (train locally) ────────────────────────────
+models/action_model/best_model.pt
+models/action_model/latest_checkpoint.pt
+
+# ── Training Results (generated locally) ─────────────────────────────
+results/
+
+# ── Runtime Logs ──────────────────────────────────────────────────────
+logs/
+
+# ── InsightFace Model Cache ──────────────────────────────────────────
+.insightface/
+~/.insightface/
+
+# ── OS / Misc ────────────────────────────────────────────────────────
+*.log
+*.tmp
